@@ -1,0 +1,82 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>เกมฝึกขั้นตอนการตรวจหน้าท้อง</title>
+<style>
+:root{--teal:#0f766e;--deep:#155e75;--ink:#18364a;--muted:#5e7482;--line:#d7e5eb;--green:#16834a}*{box-sizing:border-box}body{margin:0;background:linear-gradient(140deg,#edf8fb,#f8f9fc 58%,#e9f5f1);font-family:system-ui,"Segoe UI",Tahoma,sans-serif;color:var(--ink)}button{font:inherit;cursor:pointer}.shell{max-width:1000px;margin:auto;padding:20px 15px 40px}header{text-align:center;padding:15px 8px 20px}.eyebrow{font-size:.8rem;letter-spacing:.08em;font-weight:850;color:var(--teal)}h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:6px 0}.subtitle{color:var(--muted);line-height:1.65}.tabs{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin:15px 0 20px}.tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 15px;font-weight:800;color:var(--ink)}.tab.active{background:var(--deep);color:white}.panel{background:#ffffffed;border:1px solid #dce8ee;border-radius:22px;padding:clamp(16px,3vw,28px);min-height:440px}.game-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}h2{font-size:clamp(1.25rem,3vw,1.55rem);margin:0 0 7px}.objective{color:var(--muted);margin:0;line-height:1.65}.pill,.stage-tag{display:inline-block;background:#e4f4f1;color:#12675f;border-radius:999px;padding:7px 12px;font-weight:800;font-size:.85rem}.page{display:none}.page.active{display:block}.center-page{text-align:center;padding:12px 0 20px}.stage-tag{margin-bottom:14px;background:#eaf4f7;color:#386276}.box-zone{max-width:510px;margin:auto;background:linear-gradient(#f4fbfc,#e8f5f5);border:1px solid #d2e8e7;border-radius:22px;padding:22px 18px}.box-art{width:190px;height:160px;margin:4px auto 14px;position:relative}.box-body{position:absolute;left:20px;right:20px;bottom:8px;height:96px;background:#c98a48;border:3px solid #965c2c;border-radius:9px 9px 14px 14px;box-shadow:inset 0 -10px #b77839}.box-body:before{content:"";position:absolute;left:12px;right:12px;top:12px;height:11px;background:#e6b36f}.box-lid{position:absolute;left:10px;right:10px;top:25px;height:35px;background:#e2ad68;border:3px solid #965c2c;border-radius:7px;transform:rotate(-4deg)}.box-label{position:absolute;left:46px;right:46px;bottom:30px;background:#fff1ce;border:2px solid #965c2c;border-radius:5px;padding:6px 2px;font-weight:900;color:#70421d}.box-zone h3{margin:4px 0 6px}.box-zone p{color:var(--muted);line-height:1.6;max-width:380px;margin:0 auto 18px}.primary,.secondary{border:0;border-radius:12px;padding:12px 17px;font-weight:850}.primary{background:var(--teal);color:white;box-shadow:0 4px 0 #075b55}.secondary{background:#edf3f6;color:#29485b;border:1px solid #d5e2e8}.shaking .box-art{animation:shake .55s ease-in-out 2}@keyframes shake{0%,100%{transform:rotate(0) translateX(0)}20%{transform:rotate(-8deg) translateX(-7px)}40%{transform:rotate(8deg) translateX(7px)}60%{transform:rotate(-6deg) translateX(-5px)}80%{transform:rotate(6deg) translateX(5px)}}.instructions{background:#f0f7fa;border-radius:13px;padding:12px 14px;color:#38566b;line-height:1.6;margin-bottom:17px}.cards{display:grid;gap:9px}.card{display:flex;align-items:center;gap:10px;padding:11px 12px;border:1px solid #d8e4e9;background:white;border-radius:13px;cursor:grab;user-select:none}.card.dragging{opacity:.45}.card.drag-over{border:2px dashed var(--teal);background:#effaf8}.grip{color:#8297a5;font-size:1.1rem}.card-num{width:31px;height:31px;border-radius:9px;background:#eaf3f6;color:#3b5c6f;display:grid;place-items:center;font-weight:900;flex:none}.card-text{flex:1;line-height:1.55;overflow-wrap:anywhere}.sort-controls{display:flex;gap:4px}.arrow{border:1px solid #d5e2e8;background:#f3f7f9;color:#31566b;border-radius:8px;min-width:32px;height:32px;font-weight:900}.arrow:disabled{opacity:.28}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.actions button{flex:1;min-width:180px}.feedback{display:none;margin-top:15px;border-radius:13px;padding:13px 15px;line-height:1.6}.feedback.show{display:block}.feedback.bad{background:#fff0ee;border:1px solid #f2c2bd;color:#922b22}.answer-intro{text-align:center;color:var(--muted);line-height:1.65}.answer-list{max-width:850px;margin:auto}.answer-list .card{cursor:default;background:#fbfefd;border-color:#d8eadf}.answer-list .card-num{background:#e7f6ec;color:#176d3e}.answer-list .grip{display:none}.checkmark{color:var(--green);font-size:1.6rem;font-weight:950;width:40px;text-align:center}.answer-actions{margin:20px auto 0;max-width:850px}.answer-actions button{width:100%}.answer-actions.actions button{min-width:180px}.footer{text-align:center;color:#718594;font-size:.82rem;margin-top:19px;line-height:1.6}@media(max-width:600px){.panel{border-radius:18px}.card{gap:7px;padding:9px}.card-text{font-size:.94rem}.actions button{min-width:100%}}
+</style></head><body><div class="shell"><header><div class="eyebrow">NURSING SKILLS · INTERACTIVE LEARNING</div><h1>เกมฝึกขั้นตอนการตรวจหน้าท้อง</h1><p class="subtitle">ฝึกเรียงลำดับขั้นตอนการตรวจ Fluid thrill และ Shifting dullness ด้วยการเขย่ากล่องข้อความ</p></header>
+<nav class="tabs"><button class="tab active" data-game="fluid">เกมที่ 1 · Fluid thrill</button><button class="tab" data-game="shifting">เกมที่ 2 · Shifting dullness</button></nav>
+<main class="panel"><div class="game-head"><div><h2 id="gameTitle"></h2><p class="objective" id="objective"></p></div><div class="pill" id="countPill"></div></div>
+<section class="page active" id="page1"><div class="center-page"><div class="stage-tag">หน้า 1 จาก 3 · เขย่ากล่องข้อความ</div><div class="box-zone" id="boxZone"><div class="box-art"><div class="box-lid"></div><div class="box-body"></div><div class="box-label">ข้อความปริศนา</div></div><h3>พร้อมเขย่ากล่องหรือยัง?</h3><p>ภายในกล่องมีข้อความขั้นตอนการตรวจ เมื่อเขย่าแล้ว ข้อความจะถูกสุ่มลำดับเพื่อให้คุณจัดเรียงใหม่</p><button class="primary" id="shakeBtn">↻ เขย่ากล่อง</button></div></div></section>
+<section class="page" id="page2"><div class="stage-tag">หน้า 2 จาก 3 · เรียงลำดับข้อความ</div><div class="instructions">ลากการ์ดหรือใช้ปุ่มลูกศร ↑ ↓ เพื่อจัดลำดับ จากนั้นกด “ตรวจคำตอบ” หากต้องการดูเฉลย กด “ยอมแพ้/ขอดูเฉลย”</div><div class="cards" id="cards" aria-live="polite"></div><div class="actions"><button class="primary" id="checkBtn">ตรวจคำตอบ</button><button class="secondary" id="giveUpBtn">ยอมแพ้/ขอดูเฉลย</button></div><div class="feedback" id="feedback" role="status"></div></section>
+<section class="page" id="page3"><div class="stage-tag">หน้า 3 จาก 3 · เฉลย</div><p class="answer-intro">เฉลยลำดับขั้นตอนที่ถูกต้อง เครื่องหมายถูกสีเขียวแสดงลำดับเฉลย</p><div class="cards answer-list" id="answerList"></div><div class="answer-actions actions">
+<button class="primary" id="restartBtn">↻ เริ่มใหม่/สุ่มอีกครั้ง</button>
+<button class="secondary" id="navigateGameBtn">ไปยังเกมถัดไป</button>
+</div></section></main><div class="footer">สื่อฝึกทบทวนเพื่อการเรียนรู้ · ควรตรวจสอบขั้นตอนตามเอกสารอ้างอิงของรายวิชา</div></div>
+<script>
+const games={
+fluid:{title:"เกมที่ 1: Fluid thrill",objective:"ฝึกเรียงลำดับขั้นตอนการตรวจ Fluid thrill",steps:[
+"แนะนำตนเอง แจ้งวัตถุประสงค์",
+"จัดสภาพแวดล้อมและจัดท่าผู้รับบริการ",
+"ผู้ตรวจวางมือซ้ายแนบหน้าท้องด้านขวาของผู้รับบริการ",
+"ใช้มือขวาดีดหรือเคาะหน้าท้องด้านซ้าย",
+"สังเกตการสั่นสะเทือนที่ส่งมาถึงมือซ้าย",
+"หากต้องการลดการสั่นสะเทือนจากไขมันหน้าท้อง ให้ผู้รับบริการวางสันมือกดบนหน้าท้องแนวกึ่งกลางตัว"]},
+shifting:{title:"เกมที่ 2: Shifting dullness",objective:"ฝึกเรียงลำดับขั้นตอนการตรวจ Shifting dullness",steps:[
+"แนะนำตนเอง แจ้งวัตถุประสงค์",
+"จัดสภาพแวดล้อมและจัดท่าผู้รับบริการ",
+"ผู้ตรวจวางมือซ้ายบนหน้าท้องขนานกับแนวกึ่งกลางลำตัว",
+"ใช้นิ้วมือขวาเคาะหน้าท้องจากตรงกลางไปยังสีข้างทั้งสองข้าง",
+"เมื่อเสียงเคาะเปลี่ยนเป็นเสียงทึบ ให้ทำเครื่องหมายไว้",
+"ให้ผู้รับบริการนอนตะแคง โดยให้ด้านที่เคาะได้เสียงทึบอยู่ด้านบน",
+"เคาะตรวจบริเวณด้านที่เคยได้เสียงทึบอีกครั้ง",
+"สังเกตการเปลี่ยนแปลงของเสียงเคาะ หากเปลี่ยนเป็นเสียงโปร่ง แสดงว่ามีการเปลี่ยนแปลงของเสียงเคาะเมื่อเปลี่ยนท่า"]}
+};
+const STATS_URL = "https://script.google.com/macros/s/AKfycbyB4Ydw1c16MFGyTBcKXJti64OyyDf13Ma24Q7ywvkgwNChCHhEubCdkNKUuUilJRuZMw/exec";
+const SHAKE_GAME_NAMES = {
+  fluid: "Abdominal Assessment - Fluid thrill",
+  shifting: "Abdominal Assessment - Shifting dullness"
+};
+const $=id=>document.getElementById(id);let current="fluid",order=[],dragFrom=null,shaking=false;
+function recordShake(gameKey){
+  const gameName = SHAKE_GAME_NAMES[gameKey];
+  if(!gameName)return;
+  const sessionId =
+    typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
+      ? crypto.randomUUID()
+      : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  const payload = {
+    game: gameName,
+    event: "shake",
+    count: 1,
+    session: sessionId
+  };
+  fetch(STATS_URL,{
+    method:"POST",
+    mode:"no-cors",
+    headers:{"Content-Type":"text/plain;charset=utf-8"},
+    body:JSON.stringify(payload),
+    keepalive:true
+  }).catch(error=>console.error("ส่งสถิติการเขย่ากล่องไม่สำเร็จ:",error));
+}
+function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}if(b.length>1&&b.every((v,i)=>v===i))[b[0],b[1]]=[b[1],b[0]];return b}
+function page(n){document.querySelectorAll(".page").forEach(p=>p.classList.toggle("active",p.id==="page"+n))}
+function clearFeedback(){const f=$("feedback");f.className="feedback";f.textContent=""}
+function header(){const g=games[current];$("gameTitle").textContent=g.title;$("objective").textContent="วัตถุประสงค์: "+g.objective;$("countPill").textContent=g.steps.length+" ขั้นตอน"}
+function render(){const root=$("cards");root.innerHTML="";const g=games[current];order.forEach((step,pos)=>{const c=document.createElement("div");c.className="card";c.draggable=true;c.tabIndex=0;const grip=document.createElement("span");grip.className="grip";grip.textContent="⠿";const num=document.createElement("span");num.className="card-num";num.textContent=pos+1;const text=document.createElement("span");text.className="card-text";text.textContent=g.steps[step];const controls=document.createElement("span");controls.className="sort-controls";const up=document.createElement("button");up.className="arrow";up.textContent="↑";up.title="เลื่อนขึ้น";up.disabled=pos===0;up.onclick=()=>move(pos,pos-1);const down=document.createElement("button");down.className="arrow";down.textContent="↓";down.title="เลื่อนลง";down.disabled=pos===order.length-1;down.onclick=()=>move(pos,pos+1);controls.append(up,down);c.append(grip,num,text,controls);c.addEventListener("dragstart",e=>{dragFrom=pos;c.classList.add("dragging");e.dataTransfer.setData("text/plain",String(pos))});c.addEventListener("dragend",()=>{dragFrom=null;document.querySelectorAll(".card").forEach(x=>x.classList.remove("dragging","drag-over"))});c.addEventListener("dragover",e=>{e.preventDefault();c.classList.add("drag-over")});c.addEventListener("dragleave",()=>c.classList.remove("drag-over"));c.addEventListener("drop",e=>{e.preventDefault();move(dragFrom===null?Number(e.dataTransfer.getData("text/plain")):dragFrom,pos)});c.addEventListener("keydown",e=>{if(e.altKey&&e.key==="ArrowUp"){e.preventDefault();move(pos,pos-1)}if(e.altKey&&e.key==="ArrowDown"){e.preventDefault();move(pos,pos+1)}});root.append(c)})}
+function move(from,to){if(from<0||to<0||from>=order.length||to>=order.length||from===to)return;const item=order.splice(from,1)[0];order.splice(to,0,item);clearFeedback();render()}
+function answer(){const root=$("answerList");root.innerHTML="";games[current].steps.forEach((s,i)=>{const row=document.createElement("div");row.className="card";const n=document.createElement("span");n.className="card-num";n.textContent=i+1;const t=document.createElement("span");t.className="card-text";t.textContent=s;const mark=document.createElement("span");mark.className="checkmark";mark.textContent="✓";mark.setAttribute("aria-label","ลำดับถูกต้อง");row.append(n,t,mark);root.append(row)});page(3)}
+function start(g){current=g;order=[];clearFeedback();header();document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.game===current));page(1)}
+function shake(){if(shaking)return;recordShake(current);shaking=true;const z=$("boxZone");z.classList.remove("shaking");void z.offsetWidth;z.classList.add("shaking");$("shakeBtn").disabled=true;setTimeout(()=>{z.classList.remove("shaking");shaking=false;$("shakeBtn").disabled=false;order=shuffle(games[current].steps.map((_,i)=>i));render();clearFeedback();page(2)},1050)}
+$("shakeBtn").onclick=shake;$("checkBtn").onclick=()=>{const total=order.length,correct=order.reduce((n,v,i)=>n+(v===i?1:0),0);if(correct===total)answer();else{$("feedback").className="feedback show bad";$("feedback").textContent=`ยังไม่ถูกต้อง มี ${correct} จาก ${total} ข้อที่อยู่ในตำแหน่งที่ถูกต้อง ลองจำลำดับใหม่อีกครั้งนะคะ`}};$("giveUpBtn").onclick=answer;
+$("restartBtn").onclick=()=>{order=[];clearFeedback();page(1)};
+$("navigateGameBtn").onclick=()=>{
+  if(current==="fluid"){start("shifting")}
+  else{start("fluid")}
+};
+function updateAnswerNavigation(){
+  const btn=$("navigateGameBtn");
+  if(current==="fluid"){btn.textContent="ไปยังเกมถัดไป";btn.className="secondary"}
+  else{btn.textContent="กลับไปยังเกมก่อนหน้า";btn.className="secondary"}
+}
+const originalAnswer=answer;
+answer=function(){originalAnswer();updateAnswerNavigation()};
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>start(b.dataset.game));start("fluid");
+</script></body></html>
